@@ -12,11 +12,26 @@ struct EntryModel: Identifiable, Codable {
     var name: String
     var employeeCode: String
     var taskContent: String
+    var department: String
+    var jobType: String
+    var note: String
+    var date: Date
     
-    init(id: UUID = UUID(), name: String, employeeCode: String, taskContent: String) {
+    init(id: UUID = UUID(),
+         name: String,
+         employeeCode: String,
+         taskContent: String,
+         department: String,
+         jobType: String,
+         note: String,
+         date: Date) {
         self.id = id
         self.name = name
         self.employeeCode = employeeCode
         self.taskContent = taskContent
+        self.department = department
+        self.jobType = jobType
+        self.note = note
+        self.date = date
     }
 }
