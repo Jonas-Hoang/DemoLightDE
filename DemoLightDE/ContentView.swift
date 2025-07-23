@@ -20,6 +20,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("✍️ Nhập liệu", systemImage: "square.and.pencil")
                 }
+
+            OCRImportView(storage: storage) // ✅ Thêm dòng này
+                .tabItem {
+                    Label("🧠 OCR", systemImage: "text.viewfinder")
+                }
         }
         .frame(minWidth: 600, minHeight: 600)
     }

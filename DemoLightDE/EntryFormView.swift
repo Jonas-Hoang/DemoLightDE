@@ -26,7 +26,7 @@ struct EntryFormView: View {
                 TextField("Họ tên", text: $fullName)
                 TextField("Số CCCD", text: $identityNumber)
                 TextField("ID Nhân viên", text: $employeeID)
-                TextField("Phòng ban", text: $department) // ✅ Mới
+                TextField("Phòng ban", text: $department)
                 DatePicker("Ngày ký", selection: $signingDate, displayedComponents: .date)
                 DatePicker("Ngày nhập dữ liệu", selection: $entryDate, displayedComponents: .date)
                 TextField("Ghi chú", text: $note)
