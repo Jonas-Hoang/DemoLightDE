@@ -21,7 +21,7 @@ struct ContentView: View {
                     Label("✍️ Nhập liệu", systemImage: "square.and.pencil")
                 }
 
-            OCRImportView(storage: storage) // ✅ Thêm dòng này
+            OCRImportView(storage: storage)
                 .tabItem {
                     Label("🧠 OCR", systemImage: "text.viewfinder")
                 }

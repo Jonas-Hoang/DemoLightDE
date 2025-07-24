@@ -15,8 +15,8 @@ struct EntryFormView: View {
     @State private var employeeID = ""
     @State private var signingDate = Date()
     @State private var note = ""
-    @State private var department = "" // ✅ Thêm trường phòng ban
-    @State private var entryDate = Date() // ✅ Thêm ngày nhập dữ liệu
+    @State private var department = ""
+    @State private var entryDate = Date()
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
